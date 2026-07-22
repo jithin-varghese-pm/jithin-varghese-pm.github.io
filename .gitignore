@@ -1,0 +1,7 @@
+# Brainstorming mockups and visual-companion working files
+.superpowers/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
