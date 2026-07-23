@@ -47,7 +47,7 @@ Design tokens:
 - Accent: `#F2B705` (amber). Used sparingly for one CTA per section, links, and the monogram.
 - Borders/hairlines: `#2A2620`.
 - Typography: system sans-serif stack, heavy weights (700 to 800) for headings, large hero type. No serif.
-- Identity mark: a "JV" monogram in amber (no photo is used, per available assets).
+- Identity mark: a real photo of Jithin (from his LinkedIn DP) in the hero, with a "JV" amber monogram used for the favicon.
 - Shape language: small border radius (4 to 8px), generous vertical spacing, thin section dividers.
 
 The single accent color is intentional and should stay consistent across the whole site as a brand signal.
@@ -109,11 +109,52 @@ Principles:
 - No backend, no user data collection.
 - Keep the accent to a single color; resist adding a second accent.
 
-## 10. Open items to confirm before or during build
+## 10. Open items (remaining)
 
-1. Confirmed: personal GitHub account `jithin-varghese`, repository `jithin-varghese.github.io`.
-2. The three essays to feature.
-3. The two Selected Work highlights and their outcome lines.
-4. Bio text, skill tags, and the exact hero headline and positioning sentence.
-5. LinkedIn URL, Instagram URL, and contact email.
-6. Whether to include a lightweight, privacy-friendly analytics snippet.
+1. GoatCounter account and site code (Jithin to create; snippet placeholder marked in HTML).
+2. GitHub account `jithin-varghese` ready and authenticated for push at deploy time.
+3. Final copy review of the drafted bio and Selected Work cards.
+
+## 11. Finalized content (intake 2026-07-23)
+
+Identity:
+- Name: Jithin Varghese. Title: Product Manager, Cloud, SaaS and Platform Products. Location: Bengaluru, India.
+- Contact email (displayed): jithinvarghese.varghese8@gmail.com. Phone (optional, may omit): +91 8943657704.
+- Photo: `assets/jithin.jpg`. Favicon: "JV" amber monogram.
+
+Hero:
+- Headline: "I turn complex platforms into products people rely on."
+- Positioning line: "Product Manager for cloud, SaaS and platform products. 6+ years turning data into 30%+ gains in adoption and efficiency."
+- CTAs: Download resume (primary), Read my writing, LinkedIn.
+
+About / skills (from resume):
+- Bio: drafted from the resume professional summary (2 to 3 sentences), author to review.
+- Skill tags: Product Strategy and Roadmaps, Technical Architecture Collaboration, NFR Definition, OKRs and KPIs, Agile (Scrum/Kanban), API and Platform Products, Data-Driven Decision Making, Stakeholder Management.
+- Tools (optional secondary row): Azure, REST APIs, SQL, Power BI, Figma, Notion, ClickUp.
+
+Experience (reverse chronological, from resume):
+1. Product Manager, Darby Telematics, Bengaluru, Dec 2023 to Present.
+2. Product Manager, Spektra Systems, Bengaluru, Jan 2020 to Nov 2023.
+3. Cloud Solutions Consultant, Spektra Systems, Bengaluru, Jun 2016 to Dec 2019.
+- Education: Product Management Program, Duke Corporate Education via upGrad (2020 to 2021); B.Tech CSE, College of Engineering Chengannur (2012 to 2016). May appear as a compact line under Experience.
+
+Selected Work (2 cards, Problem / Action / Outcome):
+- A. OTA software update platform: led ideation to launch; aligned engineering on system design and tradeoffs; shipped reliably at scale across 500,000+ vehicles.
+- B. API-driven automation platform: led build-vs-buy with architecture; delivered 200%+ process efficiency gains.
+
+Writing (3 featured essays, all on Moved by Machines):
+1. Riding the EV Adoption Curve: https://movedbymachines.substack.com/p/riding-the-ev-adoption-curve-why
+2. The Kia Seltos Key: A Tiny Detail, A Big UX Win: https://movedbymachines.substack.com/p/the-kia-seltos-key-a-tiny-detail-2c9
+3. Buying a Car in India Feels Like a Broken UX Problem: https://movedbymachines.substack.com/p/buying-a-car-in-india-feels-like
+- Substack chips: Moved by Machines (https://movedbymachines.substack.com/) and Jithin's Substack (https://jithinvarghese.substack.com/).
+
+Links (Connect):
+- LinkedIn: https://www.linkedin.com/in/jithin-varghese-pm/
+- Both Substacks (above), email (above). Instagram: omitted by choice.
+
+Analytics:
+- GoatCounter, privacy-friendly, no cookies. Script placeholder in HTML with a clearly marked spot for Jithin's site code.
+
+Social share and favicon:
+- Favicon: "JV" monogram, amber on dark, provided as SVG (and PNG fallback).
+- Open Graph / social image: 1200x630, dark and amber, featuring the photo, name, and headline.
