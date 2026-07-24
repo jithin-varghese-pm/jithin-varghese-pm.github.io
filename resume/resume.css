@@ -1,0 +1,95 @@
+/* ===== Jithin Varghese — Resume (print-optimized, single page Letter) ===== */
+
+@page {
+  size: Letter;
+  margin: 0.4in 0.6in;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  color: #1a1a1a;
+  font-size: 9.9pt;
+  line-height: 1.33;
+}
+
+a { color: #1a1a1a; text-decoration: none; }
+
+.page { max-width: 7.3in; margin: 0 auto; padding: 0; }
+
+/* ---------- Header ---------- */
+.head { text-align: center; margin-bottom: 8px; }
+h1 {
+  font-size: 23pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin: 0 0 2px;
+}
+.title {
+  font-size: 10.8pt;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 5px;
+}
+.contact {
+  font-size: 9.2pt;
+  color: #444;
+  margin: 0;
+}
+.contact a { color: #444; }
+.contact span { color: #bbb; margin: 0 5px; }
+
+/* ---------- Section headings ---------- */
+h2 {
+  font-size: 9.4pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin: 9px 0 5px;
+  padding-bottom: 2.5px;
+  border-bottom: 1px solid #222;
+}
+section:first-of-type h2 { margin-top: 2px; }
+
+p { margin: 0 0 3px; }
+
+/* ---------- Experience ---------- */
+.role { margin-bottom: 6px; break-inside: avoid; }
+.role-head { display: flex; justify-content: space-between; align-items: baseline; }
+.role-title { font-weight: 700; font-size: 10.4pt; }
+.role-dates { font-size: 9pt; color: #555; white-space: nowrap; }
+.role-org { font-size: 9.4pt; color: #555; margin-bottom: 2px; }
+
+ul { margin: 2px 0 0; padding-left: 15px; }
+li { margin-bottom: 1.8px; }
+li::marker { color: #666; }
+
+strong { font-weight: 700; }
+
+/* ---------- Inline lists (competencies, tools) ---------- */
+.inline { line-height: 1.45; }
+
+/* ---------- Education ---------- */
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+.edu-title { font-weight: 700; }
+.edu-org { color: #555; margin-left: 6px; }
+
+@media screen {
+  body { background: #eceff1; padding: 24px 0; }
+  .page {
+    background: #fff;
+    width: 8.5in;
+    min-height: 11in;
+    padding: 0.4in 0.6in;
+    box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  }
+}
