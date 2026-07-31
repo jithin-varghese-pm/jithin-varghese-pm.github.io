@@ -214,6 +214,15 @@ h1 {
   margin-top: 12px;
 }
 .pao dd { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+.card-tag {
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.card-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 18px; }
 
 /* ---------- Writing ---------- */
 .essay-list { display: flex; flex-direction: column; gap: 14px; }
