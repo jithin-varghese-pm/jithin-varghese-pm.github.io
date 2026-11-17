@@ -222,7 +222,37 @@ h1 {
   font-weight: 700;
   margin: 0 0 8px;
 }
-.card-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 18px; }
+.card-links { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 18px; }
+
+/* Featured project: full width, text beside its image */
+.work-card.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 28px;
+  align-items: center;
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  background: radial-gradient(120% 120% at 100% 0%, rgba(242,183,5,.10), transparent 55%), var(--surface);
+  scroll-margin-top: 80px;
+}
+.work-card.featured h3 { font-size: 1.4rem; }
+.featured-art { display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); }
+.featured-art img { display: block; width: 100%; height: auto; transition: transform .3s ease; }
+.work-card.featured:hover .featured-art img { transform: scale(1.03); }
+.stats { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 18px 0 0; }
+.stats li { font-size: 13px; color: var(--muted); border: 1px solid var(--line); border-radius: 20px; padding: 5px 12px; }
+.stats strong { color: var(--text); }
+
+/* Hero pointer to the latest project */
+.latest {
+  display: inline-flex; align-items: center; gap: 10px; margin: 0 0 22px;
+  font-size: 14px; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px 5px 5px;
+  transition: border-color .15s ease, color .15s ease;
+}
+.latest:hover { border-color: var(--accent); color: var(--text); }
+.latest-tag { background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; border-radius: 999px; padding: 3px 9px; }
+@media (prefers-reduced-motion: reduce) { .work-card.featured:hover .featured-art img { transform: none; } }
 
 /* ---------- Writing ---------- */
 .essay-list { display: flex; flex-direction: column; gap: 14px; }
@@ -284,6 +314,8 @@ h1 {
   .lead { margin-left: auto; margin-right: auto; }
   .cta-row { justify-content: center; }
   .work-grid { grid-template-columns: 1fr; }
+  .work-card.featured { grid-template-columns: 1fr; }
+  .featured-art { order: -1; }
 }
 
 @media (max-width: 540px) {
